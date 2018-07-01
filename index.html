@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Currency converter</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  <style>
+    .form-group {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="jumbo">
+      <h1 class="display-4">Currency Converter</h1>
+      <hr class="my-4">
+      <p class="lead">
+        <form class="form-inline" id="conversion-form">
+          <div class="form-group mb-2">
+            <input type="number" class="form-control form-control-lg" id="fromCurrency">
+          </div>
+          <div class="form-group mb-2">
+            <select id="from-currencies" class="form-control form-control-lg">
+            </select>
+          </div>
+          <div class="form-group mb-2">
+            <label> To </label>
+          </div>
+          <div class="form-group mb-2">
+            <select id="to-currencies" class="form-control form-control-lg">
+            </select>
+          </div>
+          <button class="btn btn-primary mb-2 btn-lg">Convert</button>
+          <div class="form-group mb-2">
+            <input type="text" readonly class="form-control form-control-lg" id="result" >
+          </div>
+        </form>
+      </p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
